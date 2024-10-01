@@ -135,6 +135,7 @@ a {
 .menu{
     display: flex;
     gap: 68px;
+    align-items: flex-start;/*hauteur de l'élément uniquement et non pas toute la classe menu*/
 }
 
 
