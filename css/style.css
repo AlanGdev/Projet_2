@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -121,6 +122,31 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Header ***********/
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    padding: 30px 50px 30px 0px;
+}
+
+.menu{
+    display: flex;
+    gap: 68px;
+}
+
+
+.menu a{
+    padding-top: 16px;
+}
+
+.menu a:hover{
+    border-top: 2px #0065FC solid;
+    color: #0065FC
+    ;
+}
 
 
 
