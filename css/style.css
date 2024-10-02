@@ -148,8 +148,48 @@ a {
     color: #0065FC
     ;
 }
+/****** info-group ***********/
+.info-group{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
+/****** search-bar ***********/
 
-
+.search-bar{
+    display: flex;
+    align-items:center;
+}
+.search-bar input{
+    height: 49px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border:none;
+}
+.search-bar input[type="text"]{
+    box-sizing: border-box; /* La hauteur de 49px inclut maintenant le padding et la bordure */
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px dotted #F2F2F2;
+}
+.search-bar input[type="submit"]{
+    color: white;
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.fa-location-dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;
+    color: black;
+    background-color:#F2F2F2;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
