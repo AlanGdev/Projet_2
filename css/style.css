@@ -154,6 +154,23 @@ a {
     flex-direction: column;
     gap:35px;
 }
+/******headline***********/
+.headline{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.headline h1{
+    margin:0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 22px;
+}
+.headline p{
+    margin: 0;
+    font-size: 16px;
+}
+
 /****** search-bar ***********/
 
 .search-bar{
@@ -189,6 +206,66 @@ a {
     font-size: 18px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+/******filter-bar***********/
+.filter-bar {
+    display: flex;
+    font-weight: 700;
+    gap: 15px;
+    align-items: center;
+}
+.filter-bar p{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+}
+.filter{
+    display: flex;
+    height: 50px;
+    box-sizing: border-box; /* La hauteur de 49px inclut maintenant le padding et la bordure */
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border: solid 2px whitesmoke;
+    padding: 4px 19px 4px 19px;
+    border-radius: 25px;
+}
+.filter i{
+    font-size: 22px;
+}
+.filter p{
+font-size: 17px;
+}
+.filter:hover{
+    background-color: #DEEBFF;
+}
+/******info-bat***********/
+.info-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: none;
+}
+.info-bar i{display: flex;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #0065FC;
+    border: solid 1px #F2F2F2;
+    border-radius: 50%;
+    padding: none;
+
+}
+.info-bar p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    padding: none;
+
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
