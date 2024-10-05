@@ -70,13 +70,13 @@ a {
 }
 
 .logo{
-    padding: 30px 50px 30px 0px;
+    padding-top: 30px;
 }
 
 .menu{
     display: flex;
     gap: 68px;
-    align-items: flex-start;/*hauteur de l'élément uniquement et non pas toute la classe menu*/
+    align-items: flex-start;
 }
 
 
@@ -92,6 +92,7 @@ a {
 
 /****** info-group ***********/
 .info-group{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap:35px;
@@ -229,6 +230,7 @@ font-size: 17px;
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -357,22 +359,25 @@ font-size: 17px;
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
+    margin-top: 30px;
+
 }
 
 .activities-cards{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    margin-top: 30px;
 }
 
 .activities a{
     width: 25%;
-    height:100%;
     padding:0
 }
 
 .activities-cards .card{
     padding: 0;
+    height: 100%;
 }
 
 .activities-cards img{
@@ -389,6 +394,33 @@ font-size: 17px;
 .activities-cards .card-title{
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/****** Footer ***********/
+.footer{
+    display: flex;
+    background-color: #F2F2F2;
+    margin-top: 30px;
+}
+.footer-section{
+    flex-grow: 1;
+    padding: 20px;
+}
+.footer-section .title{
+    font-size: 18px;
+    margin:0;
+}
+
+.list{
+    margin: 0;
+    padding:0
+}
+.list-element{
+    padding-top: 15px;
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+    
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
