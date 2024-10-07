@@ -22,6 +22,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -82,6 +83,8 @@ a {
 
 .menu a{
     padding-top: 16px;
+    text-align: center;
+
 }
 
 .menu a:hover{
@@ -129,13 +132,18 @@ a {
     height: 100%;
     box-sizing: border-box; /* La hauteur de 49px inclut maintenant le padding et la bordure */
     border-top: 1px solid #F2F2F2;
-    border-bottom: 1px dotted #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
 
+}
+
+.search-bar .location{
+    width: 50px;
+    height: 49px;
 }
 
 .search-bar .bouton-rechercher{
@@ -183,6 +191,12 @@ a {
     display: flex;
     align-items: center;
 
+    margin:0;
+}
+
+.filter-items{
+    display: flex;
+    gap:15px
 }
 
 .filter{
@@ -192,7 +206,7 @@ a {
     align-items: center;
     justify-content: center;
     gap:10px;
-    border: solid 2px whitesmoke;
+    border: solid 2px #d9d9d9;
     padding: 4px 19px 4px 19px;
     border-radius: 25px;
     background-color: white;
@@ -476,5 +490,64 @@ font-size: 17px;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container{
+        padding: 0;
+    }
+    .nav-bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        width: 100%;
+        gap:0
+    }
+    .menu a{
+        padding-bottom: 16px;
+        flex-grow: 1;
+        border-bottom: 2px #f2f2f2 solid;
+
+    }
+    .menu a:hover{
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+        color: #0065FC
+        ;
+    }
+    .info-group{
+        padding: 0 20px;
+    }
+
+    .search-bar input[type="text"]{
+        min-width: 10ch;/* On réduit le nb caractères min en fct de la largeur de l'écran */
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .search-bar .bouton-rechercher i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-bar .bouton-rechercher p{
+        display: none;
+    }
+
+    .filter-bar{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .filter-items{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .filter{
+        width: 50%;
+    }
+
+
+    
 }
