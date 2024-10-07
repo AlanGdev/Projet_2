@@ -183,14 +183,17 @@ a {
     border: solid 2px whitesmoke;
     padding: 4px 19px 4px 19px;
     border-radius: 25px;
+    background-color: white;
 }
 
 .filter i{
     font-size: 22px;
+
 }
 
 .filter p{
 font-size: 17px;
+
 }
 
 .filter:hover{
