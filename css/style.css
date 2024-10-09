@@ -71,7 +71,9 @@ a {
 }
 
 .logo{
+    width: 61px;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .menu{
