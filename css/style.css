@@ -220,7 +220,7 @@ a {
     font-size: 22px;
 }
 
-.filter p{
+.filter span{
 font-size: 17px;
 }
 
@@ -476,7 +476,7 @@ font-size: 17px;
         flex-direction: column;
         align-items: flex-start;
     }
-    .filter p{
+    .filter span{
         font-size: 16px;
     }
 
@@ -563,7 +563,7 @@ font-size: 17px;
         align-items: center;
     }
 
-    .search-bar .bouton-rechercher p{
+    .search-bar .bouton-rechercher span{
         display: none;
     }
 
@@ -586,7 +586,7 @@ font-size: 17px;
         width: 50%;
     }
 
-    .filter p{
+    .filter span{
         font-size: 14px;
     }
 
