@@ -554,7 +554,6 @@ font-size: 17px;
     .search-bar input[type="text"]{
         min-width: 10ch;/* Pour le responsive <350px */
         flex-grow: 1;
-        flex-shrink: 1;
     }
 
     .search-bar .bouton-rechercher i{
